@@ -1,0 +1,7 @@
+---
+- name: Ping hosts to check connectivity
+  hosts: Kubernetes
+  gather_facts: no
+  tasks:
+    - name: Ping hosts
+      ping:
